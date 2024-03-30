@@ -1,0 +1,14 @@
+services:
+  mqtt-broker:
+    # https://hub.docker.com/_/eclipse-mosquitto
+    image: eclipse-mosquitto:2
+    container_name: mqtt-broker
+    ports:
+      - 1883:1883
+      - 9001:9001
+    volumes:
+      - ./docker/mqtt-broker/config/mosquitto.conf:/mosquitto/config/mosquitto.conf
+      - ./docker/mqtt-broker/config/password.txt:/mosquitto/config/password.txt
+      - /mosquitto/data
+      - /mosquitto/log
+    restart: always
