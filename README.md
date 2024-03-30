@@ -1,5 +1,10 @@
+
+
 # rust-mqtt
 RustでのMQTTクライアントの実装例です。
+[IoTメッセージングプロトコル・MQTTの基本 (Rustのクライアント実装付き)](https://zenn.dev/ohke/articles/c98c8fa1e5e392) も合わせてご覧ください。
+
+**あくまで実装例ですので、本番利用はお控えください。**
 
 ## 使い方
 
